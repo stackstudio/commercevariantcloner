@@ -1,0 +1,43 @@
+{
+    "name": "stackstudio/commerce-variant-cloner",
+    "description": "Commerce variant cloner tool",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "commerce variant cloner"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stack Studio",
+            "homepage": "www.stackstudio.co.uk"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "stackstudio\\commercevariantcloner\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Commerce Variant Cloner",
+        "handle": "commerce-variant-cloner",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "???",
+        "components": {
+            "commerceVariantClonerService": "stackstudio\\commercevariantcloner\\services\\CommerceVariantClonerService"
+        },
+        "class": "stackstudio\\commercevariantcloner\\CommerceVariantCloner"
+    }
+}
